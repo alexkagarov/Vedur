@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AE693C99AA4786F2B56CB6E /* Pods_Vedur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943E234BBFBAEAF28FD71C7C /* Pods_Vedur.framework */; };
+		5F1844D222BE6DCA003D0700 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1844D122BE6DCA003D0700 /* MainViewController.swift */; };
+		5F1844D422BE7B9F003D0700 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1844D322BE7B9F003D0700 /* SideMenuViewController.swift */; };
+		5F1844D622BE88B6003D0700 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1844D522BE88B6003D0700 /* ContainerViewController.swift */; };
+		5F1844D822BE88D2003D0700 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1844D722BE88D2003D0700 /* SettingsViewController.swift */; };
+		5F322F7E22BD2FCF00028DCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F322F7D22BD2FCF00028DCC /* AppDelegate.swift */; };
+		5F322F8322BD2FCF00028DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F322F8122BD2FCF00028DCC /* Main.storyboard */; };
+		5F322F8822BD2FD200028DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F322F8722BD2FD200028DCC /* Assets.xcassets */; };
+		5F322F8B22BD2FD200028DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F322F8922BD2FD200028DCC /* LaunchScreen.storyboard */; };
+		5F66D4B322C4C0DE0071B754 /* Vedur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F66D4B122C4C0DE0071B754 /* Vedur.xcdatamodeld */; };
+		5F66D4B522C4DC250071B754 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F66D4B422C4DC250071B754 /* NetworkService.swift */; };
+		5F9D144A22C82F420035FB0B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D144822C82F420035FB0B /* CoreDataStack.swift */; };
+		5FB869A822C0D0DA00E4BC00 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB869A722C0D0D900E4BC00 /* MapKit.framework */; };
+		5FB869AA22C0D10700E4BC00 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB869A922C0D10700E4BC00 /* LocationManager.swift */; };
+		5FB869AD22C10D5900E4BC00 /* EditCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB869AC22C10D5900E4BC00 /* EditCitiesViewController.swift */; };
+		5FB869AF22C10D6B00E4BC00 /* EditCityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB869AE22C10D6B00E4BC00 /* EditCityTableViewCell.swift */; };
+		5FCAD2AA22BF9D0000EE5972 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD2A922BF9D0000EE5972 /* WeatherCollectionViewCell.swift */; };
+		5FCAD2AE22BFC61500EE5972 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD2AD22BFC61500EE5972 /* SideMenuTableViewCell.swift */; };
+		5FCAD2B222BFCB4C00EE5972 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCAD2B122BFCB4C00EE5972 /* DataSource.swift */; };
+		5FFBE6FB22C924C600BFA339 /* Forecast+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE6F922C924C600BFA339 /* Forecast+CoreDataClass.swift */; };
+		5FFBE6FC22C924C600BFA339 /* Forecast+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE6FA22C924C600BFA339 /* Forecast+CoreDataProperties.swift */; };
+		5FFBE6FD22C924C600BFA339 /* Weather+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE6F622C924C600BFA339 /* Weather+CoreDataClass.swift */; };
+		5FFBE6FE22C924C600BFA339 /* Weather+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE6F722C924C600BFA339 /* Weather+CoreDataProperties.swift */; };
+		5FFBE6FF22C924C600BFA339 /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE6F822C924C600BFA339 /* City+CoreDataProperties.swift */; };
+		5FFBE70122C924DA00BFA339 /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE70022C924D900BFA339 /* City+CoreDataClass.swift */; };
+		5FFBE70322C9611300BFA339 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE70222C9611300BFA339 /* DateFormatter.swift */; };
+		5FFBE70722C96B2D00BFA339 /* TemperatureFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE70622C96B2D00BFA339 /* TemperatureFormatter.swift */; };
+		5FFBE70D22C9C2F000BFA339 /* MiniForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE70C22C9C2F000BFA339 /* MiniForecastCollectionViewCell.swift */; };
+		5FFBE70F22C9C30900BFA339 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE70E22C9C30900BFA339 /* ForecastTableViewCell.swift */; };
+		5FFBE71122C9F2AF00BFA339 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFBE71022C9F2AF00BFA339 /* LaunchScreenViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E6F6A62DD8F4B3AF73D23A4 /* Pods-Vedur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vedur.debug.xcconfig"; path = "Target Support Files/Pods-Vedur/Pods-Vedur.debug.xcconfig"; sourceTree = "<group>"; };
+		5F1844D122BE6DCA003D0700 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5F1844D322BE7B9F003D0700 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		5F1844D522BE88B6003D0700 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		5F1844D722BE88D2003D0700 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5F322F7A22BD2FCF00028DCC /* Vedur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vedur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F322F7D22BD2FCF00028DCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F322F8222BD2FCF00028DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F322F8722BD2FD200028DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F322F8A22BD2FD200028DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F322F8C22BD2FD200028DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F66D4B222C4C0DE0071B754 /* Vedur.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vedur.xcdatamodel; sourceTree = "<group>"; };
+		5F66D4B422C4DC250071B754 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		5F9D144822C82F420035FB0B /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		5FB869A722C0D0D900E4BC00 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5FB869A922C0D10700E4BC00 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5FB869AC22C10D5900E4BC00 /* EditCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCitiesViewController.swift; sourceTree = "<group>"; };
+		5FB869AE22C10D6B00E4BC00 /* EditCityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCityTableViewCell.swift; sourceTree = "<group>"; };
+		5FCAD2A922BF9D0000EE5972 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		5FCAD2AD22BFC61500EE5972 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		5FCAD2B122BFCB4C00EE5972 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		5FFBE6F622C924C600BFA339 /* Weather+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Weather+CoreDataClass.swift"; path = "../../Weather+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5FFBE6F722C924C600BFA339 /* Weather+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Weather+CoreDataProperties.swift"; path = "../../Weather+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5FFBE6F822C924C600BFA339 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "City+CoreDataProperties.swift"; path = "../../City+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5FFBE6F922C924C600BFA339 /* Forecast+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Forecast+CoreDataClass.swift"; path = "../../Forecast+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5FFBE6FA22C924C600BFA339 /* Forecast+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Forecast+CoreDataProperties.swift"; path = "../../Forecast+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5FFBE70022C924D900BFA339 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5FFBE70222C9611300BFA339 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		5FFBE70622C96B2D00BFA339 /* TemperatureFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureFormatter.swift; sourceTree = "<group>"; };
+		5FFBE70C22C9C2F000BFA339 /* MiniForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		5FFBE70E22C9C30900BFA339 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		5FFBE71022C9F2AF00BFA339 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		8E9B755AE9CD9D1340A8C7D8 /* Pods-Vedur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vedur.release.xcconfig"; path = "Target Support Files/Pods-Vedur/Pods-Vedur.release.xcconfig"; sourceTree = "<group>"; };
+		943E234BBFBAEAF28FD71C7C /* Pods_Vedur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vedur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F322F7722BD2FCF00028DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB869A822C0D0DA00E4BC00 /* MapKit.framework in Frameworks */,
+				4AE693C99AA4786F2B56CB6E /* Pods_Vedur.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F322F7122BD2FCF00028DCC = {
+			isa = PBXGroup;
+			children = (
+				5F322F7C22BD2FCF00028DCC /* Vedur */,
+				5F322F7B22BD2FCF00028DCC /* Products */,
+				F64C962E6E6CBFF4C4AF30BD /* Pods */,
+				A19C05765CAC62BA35446290 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F322F7B22BD2FCF00028DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F322F7A22BD2FCF00028DCC /* Vedur.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F322F7C22BD2FCF00028DCC /* Vedur */ = {
+			isa = PBXGroup;
+			children = (
+				5FB869A422C0CFA000E4BC00 /* Storyboards */,
+				5FB869AB22C0D2CC00E4BC00 /* CoreData */,
+				5F322F7D22BD2FCF00028DCC /* AppDelegate.swift */,
+				5F322F8722BD2FD200028DCC /* Assets.xcassets */,
+				5F322F8C22BD2FD200028DCC /* Info.plist */,
+				5FFBE71522C9F57500BFA339 /* ViewControllers */,
+				5FFBE71322C9F53D00BFA339 /* Cells */,
+				5FFBE71622C9F58E00BFA339 /* Support */,
+			);
+			path = Vedur;
+			sourceTree = "<group>";
+		};
+		5FB869A422C0CFA000E4BC00 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5F322F8122BD2FCF00028DCC /* Main.storyboard */,
+				5F322F8922BD2FD200028DCC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5FB869AB22C0D2CC00E4BC00 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				5FFBE6F922C924C600BFA339 /* Forecast+CoreDataClass.swift */,
+				5FFBE6FA22C924C600BFA339 /* Forecast+CoreDataProperties.swift */,
+				5FFBE6F622C924C600BFA339 /* Weather+CoreDataClass.swift */,
+				5FFBE6F722C924C600BFA339 /* Weather+CoreDataProperties.swift */,
+				5FFBE70022C924D900BFA339 /* City+CoreDataClass.swift */,
+				5FFBE6F822C924C600BFA339 /* City+CoreDataProperties.swift */,
+				5F9D144822C82F420035FB0B /* CoreDataStack.swift */,
+				5F66D4B122C4C0DE0071B754 /* Vedur.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5FFBE71322C9F53D00BFA339 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5FCAD2AD22BFC61500EE5972 /* SideMenuTableViewCell.swift */,
+				5FCAD2A922BF9D0000EE5972 /* WeatherCollectionViewCell.swift */,
+				5FB869AE22C10D6B00E4BC00 /* EditCityTableViewCell.swift */,
+				5FFBE70C22C9C2F000BFA339 /* MiniForecastCollectionViewCell.swift */,
+				5FFBE70E22C9C30900BFA339 /* ForecastTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		5FFBE71522C9F57500BFA339 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F1844D522BE88B6003D0700 /* ContainerViewController.swift */,
+				5F1844D722BE88D2003D0700 /* SettingsViewController.swift */,
+				5F1844D322BE7B9F003D0700 /* SideMenuViewController.swift */,
+				5F1844D122BE6DCA003D0700 /* MainViewController.swift */,
+				5FB869AC22C10D5900E4BC00 /* EditCitiesViewController.swift */,
+				5FFBE71022C9F2AF00BFA339 /* LaunchScreenViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5FFBE71622C9F58E00BFA339 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5FB869A922C0D10700E4BC00 /* LocationManager.swift */,
+				5F66D4B422C4DC250071B754 /* NetworkService.swift */,
+				5FCAD2B122BFCB4C00EE5972 /* DataSource.swift */,
+				5FFBE70222C9611300BFA339 /* DateFormatter.swift */,
+				5FFBE70622C96B2D00BFA339 /* TemperatureFormatter.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		A19C05765CAC62BA35446290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB869A722C0D0D900E4BC00 /* MapKit.framework */,
+				943E234BBFBAEAF28FD71C7C /* Pods_Vedur.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F64C962E6E6CBFF4C4AF30BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E6F6A62DD8F4B3AF73D23A4 /* Pods-Vedur.debug.xcconfig */,
+				8E9B755AE9CD9D1340A8C7D8 /* Pods-Vedur.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F322F7922BD2FCF00028DCC /* Vedur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F322F8F22BD2FD200028DCC /* Build configuration list for PBXNativeTarget "Vedur" */;
+			buildPhases = (
+				87C5747D21D486387A599CE3 /* [CP] Check Pods Manifest.lock */,
+				5F322F7622BD2FCF00028DCC /* Sources */,
+				5F322F7722BD2FCF00028DCC /* Frameworks */,
+				5F322F7822BD2FCF00028DCC /* Resources */,
+				8BC9EBCAA0CEDFF71CBC8BFF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vedur;
+			productName = Vedur;
+			productReference = 5F322F7A22BD2FCF00028DCC /* Vedur.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F322F7222BD2FCF00028DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Alex Kagarov";
+				TargetAttributes = {
+					5F322F7922BD2FCF00028DCC = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5F322F7522BD2FCF00028DCC /* Build configuration list for PBXProject "Vedur" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F322F7122BD2FCF00028DCC;
+			productRefGroup = 5F322F7B22BD2FCF00028DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F322F7922BD2FCF00028DCC /* Vedur */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F322F7822BD2FCF00028DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F322F8B22BD2FD200028DCC /* LaunchScreen.storyboard in Resources */,
+				5F322F8822BD2FD200028DCC /* Assets.xcassets in Resources */,
+				5F322F8322BD2FCF00028DCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87C5747D21D486387A599CE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vedur-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC9EBCAA0CEDFF71CBC8BFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vedur/Pods-Vedur-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vedur/Pods-Vedur-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vedur/Pods-Vedur-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F322F7622BD2FCF00028DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FFBE6FF22C924C600BFA339 /* City+CoreDataProperties.swift in Sources */,
+				5F66D4B322C4C0DE0071B754 /* Vedur.xcdatamodeld in Sources */,
+				5FB869AF22C10D6B00E4BC00 /* EditCityTableViewCell.swift in Sources */,
+				5FFBE70322C9611300BFA339 /* DateFormatter.swift in Sources */,
+				5F1844D422BE7B9F003D0700 /* SideMenuViewController.swift in Sources */,
+				5FFBE70122C924DA00BFA339 /* City+CoreDataClass.swift in Sources */,
+				5F1844D222BE6DCA003D0700 /* MainViewController.swift in Sources */,
+				5F1844D622BE88B6003D0700 /* ContainerViewController.swift in Sources */,
+				5FFBE6FB22C924C600BFA339 /* Forecast+CoreDataClass.swift in Sources */,
+				5F9D144A22C82F420035FB0B /* CoreDataStack.swift in Sources */,
+				5F322F7E22BD2FCF00028DCC /* AppDelegate.swift in Sources */,
+				5FFBE6FE22C924C600BFA339 /* Weather+CoreDataProperties.swift in Sources */,
+				5FB869AD22C10D5900E4BC00 /* EditCitiesViewController.swift in Sources */,
+				5FFBE70722C96B2D00BFA339 /* TemperatureFormatter.swift in Sources */,
+				5FFBE6FD22C924C600BFA339 /* Weather+CoreDataClass.swift in Sources */,
+				5FFBE70F22C9C30900BFA339 /* ForecastTableViewCell.swift in Sources */,
+				5F1844D822BE88D2003D0700 /* SettingsViewController.swift in Sources */,
+				5FFBE6FC22C924C600BFA339 /* Forecast+CoreDataProperties.swift in Sources */,
+				5FFBE71122C9F2AF00BFA339 /* LaunchScreenViewController.swift in Sources */,
+				5FFBE70D22C9C2F000BFA339 /* MiniForecastCollectionViewCell.swift in Sources */,
+				5F66D4B522C4DC250071B754 /* NetworkService.swift in Sources */,
+				5FCAD2AE22BFC61500EE5972 /* SideMenuTableViewCell.swift in Sources */,
+				5FCAD2AA22BF9D0000EE5972 /* WeatherCollectionViewCell.swift in Sources */,
+				5FCAD2B222BFCB4C00EE5972 /* DataSource.swift in Sources */,
+				5FB869AA22C0D10700E4BC00 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F322F8122BD2FCF00028DCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F322F8222BD2FCF00028DCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F322F8922BD2FD200028DCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F322F8A22BD2FD200028DCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F322F8D22BD2FD200028DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F322F8E22BD2FD200028DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F322F9022BD2FD200028DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6F6A62DD8F4B3AF73D23A4 /* Pods-Vedur.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V78KN6V8CS;
+				INFOPLIST_FILE = Vedur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hialex.Vedur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F322F9122BD2FD200028DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9B755AE9CD9D1340A8C7D8 /* Pods-Vedur.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V78KN6V8CS;
+				INFOPLIST_FILE = Vedur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hialex.Vedur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F322F7522BD2FCF00028DCC /* Build configuration list for PBXProject "Vedur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F322F8D22BD2FD200028DCC /* Debug */,
+				5F322F8E22BD2FD200028DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F322F8F22BD2FD200028DCC /* Build configuration list for PBXNativeTarget "Vedur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F322F9022BD2FD200028DCC /* Debug */,
+				5F322F9122BD2FD200028DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5F66D4B122C4C0DE0071B754 /* Vedur.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5F66D4B222C4C0DE0071B754 /* Vedur.xcdatamodel */,
+			);
+			currentVersion = 5F66D4B222C4C0DE0071B754 /* Vedur.xcdatamodel */;
+			path = Vedur.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5F322F7222BD2FCF00028DCC /* Project object */;
+}
